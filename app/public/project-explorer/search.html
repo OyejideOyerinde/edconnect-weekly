@@ -13,15 +13,20 @@
     <a href="register.html">Register</a>
   </nav>
   <section>
-    <h2>Search Project By</h2>
+    <h1>Search Project By</h1>
     <form name="searchTerm"></form>
-   <input type="text" placeholder="ProjectName,Authors,Abstract,Tags" >
+   <input type="text" placeholder="ProjectName,Authors,Abstract,Tags" name="searchTerm">
     <br>
-  
+  </form>
     <form name="searchType"></form>
-    <form>
-<label>Search By:</label><select name="searchType" > <br>
+<label>Search By:</label><select name="searchType" id="Search By:" >
+   <option value="name">Name</option>
+  <option value="description">Description</option>
+  <option value="program">Program</option>
+   <option value="authors">Authors</option>
+   <option value="tags">Tags</option>
     <input type="submit" value="Search">
+   </select> <br>
     </form>
         <h2>Search Result</h2>
         <h3>Project 1</h3>
@@ -33,7 +38,6 @@
             <li>Tags:#ArsBar#GSW</li>
             <li>Year:2018</li>
           </ul>
-          </form>
         </section>
         </body>
     </html>
